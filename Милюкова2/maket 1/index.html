@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="buttons">
+      <button
+        class="headerbutton1 open-modal"
+        data-modal="myModalLogin"
+        id="profileButton"
+      >
+        Вход
+      </button>
+      <button
+        class="headerbutton2 open-modal"
+        data-modal="myModalReg"
+        id="profileButton"
+      >
+        Комментарии
+      </button>
+      <!-- модальное окно вход -->
+      <div id="myModalLogin" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Вход</h2>
+            <span class="close">&times;</span>
+          </div>
+          <p>Телефон</p>
+          <form id="signupForm">
+            <div class="form-group">
+              <input name="" id="" class="telephone"></input>
+            </div>
+            <button type="submit" class="submit-btn">Войти</button>
+          </form>
+          <div class="buttons">
+            <button class="switch-to-register active">Регистрация</button>
+            <button>Забыли пароль?</button>
+          </div>
+        </div>
+      </div>
+      <!-- модальное окно комментарии-->
+      <div id="myModalReg" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="modal-header">
+            <h2>Комментарии</h2>
+          </div>
+          <p>Дмитрий (курьер) 21.01.2021</p>
+          <form id="signupForm">
+            <div class="form-group">
+              <textarea
+                name=""
+                class="one"
+                id=""
+                type="textarea"
+                placeholder="У клиента были гнилые половина помидоров. Он сказал возьмет их. Надо возместить бонусами."
+                disabled
+              ></textarea>
+            </div>
+            <p>Аня (менеджер) 22.02.2021</p>
+            <div class="form-group">
+              <textarea
+                name=""
+                class="two"
+                id=""
+                placeholder="Созвонились с клиентом. Я начислила 50 балов."
+                disabled
+              ></textarea>
+            </div>
+            <div class="form-group active">
+              <textarea name="" id=""></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
