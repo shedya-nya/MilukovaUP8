@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="buttons">
+      <button
+        class="headerbutton1 open-modal"
+        data-modal="myModalLogin"
+        id="profileButton"
+      >
+        Вход
+      </button>
+      <!-- модальное окно вход -->
+      <div id="myModalLogin" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Авторизация</h2>
+            <span class="close">&times;</span>
+          </div>
+          <div class="buttons">
+            <button class="active">Авторизация</button>
+            <button class="switch-to-register">Регистрация</button>
+          </div>
+          <p>E-mail</p>
+          <form id="signupForm">
+            <div class="form-group">
+              <input name="" id="" type="email" />
+            </div>
+          </form>
+          <p>Номер телефона</p>
+          <form id="signupForm">
+            <div class="form-group telephone">
+              <input name="" id="num" type="number" placeholder="+7" disabled />
+              <input name="" id="" type="number" placeholder="__ __-_-_" />
+            </div>
+            <button type="submit" class="submit-btn">Войти</button>
+            <img src="img/Frame 758531537.png" alt="" />
+            <div class="icons">
+              <a href=""><img src="img/Icons social media.png" alt="" /></a>
+              <a href=""><img src="img/2.png" alt="" /></a>
+              <a href=""><img src="img/3.png" alt="" /></a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- модальное окно регистрация-->
+      <div id="myModalReg" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Регистрация</h2>
+            <span class="close">&times;</span>
+          </div>
+          <div class="buttons">
+            <button class="switch-to-login">Авторизация</button>
+            <button class="active">Регистрация</button>
+          </div>
+          <p>Номер телефона</p>
+          <form id="signupForm">
+            <div class="form-group telephone">
+              <input name="" id="num" type="number" placeholder="+7" disabled />
+              <input name="" id="" type="number" placeholder="__ __-_-_" />
+            </div>
+          </form>
+          <p>E-mail</p>
+          <form id="signupForm">
+            <div class="form-group">
+              <input name="" id="" type="email" />
+            </div>
+          </form>
+          <p>Пароль</p>
+          <form id="signupForm">
+            <div class="form-group">
+              <input
+                name=""
+                id="num"
+                type="password"
+                placeholder="Придумайте пароль"
+              />
+            </div>
+            <div class="check">
+              <input type="checkbox" name="" id="" />
+              <label for="checkbox" style="font-size: 14px"
+                >Согласен с политикой обработки персональных данных и
+                пользовательским соглашением</label
+              >
+            </div>
+            <button type="submit" class="submit-btn">Зарегистрироваться</button>
+            <img src="img/Frame 758531537.png" alt="" />
+            <div class="icons">
+              <a href=""><img src="img/Icons social media.png" alt="" /></a>
+              <a href=""><img src="img/2.png" alt="" /></a>
+              <a href=""><img src="img/3.png" alt="" /></a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
